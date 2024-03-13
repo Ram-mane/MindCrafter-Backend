@@ -32,7 +32,6 @@ public class Category {
 	
 	private String categoryDescription;
 	
-//	@JsonManagedReference
 	@JsonIgnore
 	@OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
 	private List<Post> posts = new ArrayList<>();
